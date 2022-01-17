@@ -1,0 +1,1 @@
+docker run -d --restart=always --name=es6.5.4 --network=eagleeye -p 9210:9200 -p 9310:9300 -e "discovery.type=single-node" -e "ES_JAVA_OPTS=-Xms25480m -Xmx25480m" -v /newdisk/es_independent_topo_data/data:/usr/share/elasticsearch/data elasticsearch:6.5.4
